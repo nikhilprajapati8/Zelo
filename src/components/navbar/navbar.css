@@ -1,0 +1,129 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 5rem;
+
+}
+
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  border: 5px solid var(--primary-color);
+  border-radius: 30px;
+  padding: 0 1rem;
+  font-family: var(--font-family) !important;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.active-link {
+  color: var(--primary-hover) !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.navbar_links .links {
+  margin: 0 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: color 0.3s ease-in !important;
+
+}
+
+.links:hover {
+  color: var(--primary-hover);
+  border-bottom: 2px solid var(--primary-hover);
+
+}
+
+/* small sized devices hamburger menu */
+.navbar_menu-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 1.5rem;
+  position: absolute;
+  top: 51px;
+  right: 20px;
+  min-width: 147px;
+  border-radius: 26px;
+  box-shadow: 28px 43px 70px -16px rgba(0, 0, 0, 0.18), inset 20px 18px 61px 3px rgba(0, 0, 0, 0.05);
+}
+
+.navbar_menu-box .box-links {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+
+}
+
+.box-links:hover {
+  color: var(--primary-hover);
+
+}
+
+
+/* Animation */
+
+.slide-top {
+  animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
+  }
+}
+
+
+/* screen size */
+@media only screen and (max-width: 950px) {
+  .navbar_links {
+    display: none;
+  }
+
+  .navbar_links_menu {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .navbar_links_menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    margin: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}

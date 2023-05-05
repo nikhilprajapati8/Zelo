@@ -1,0 +1,33 @@
+.features {
+    background-color: #3F3D56;
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 5rem;
+}
+
+.features-heading {
+    color: white;
+    font-family: var(--font-family);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+
+.features-heading .adventure-heading {
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width:800px) {
+    .features {
+        margin: 2rem 0;
+        padding: 1rem 0 2rem;
+    }
+
+    .features-heading {
+        font-size: 1rem;
+        padding: 2rem 1rem 1rem;
+    }
+}

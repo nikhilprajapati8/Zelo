@@ -1,0 +1,24 @@
+.about {
+    padding: 1rem 5rem;
+
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 2;
+    font-family: var(--font-family-secondary);
+    word-spacing: 2px;
+    color: var(--black-color-secondary);
+}
+
+@media screen and (max-width:800px) {
+    .about {
+        padding: 1rem 2.5rem;
+
+    }
+
+    .about p {
+        font-size: 15px;
+
+    }
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&family=Montserrat:wght@400;500;900&display=swap');
+
+
+:root {
+    --primary-color: #6C63FF;
+    --primary-hover: #372cf6;
+    --secondary-color: #FF6884;
+    --black-color: #393939;
+    --black-color-secondary: #393939f4;
+    --font-family: Montserrat;
+    --font-family-secondary: Manrope;
+
+
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
